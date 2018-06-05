@@ -1,0 +1,391 @@
+.item_list ol, ul {
+    list-style: none;
+}
+.item_list {
+    padding: 20px 0 20px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.item_list a:hover, a:focus, a:active {
+    color: black;
+    text-decoration: none;
+}
+.item_list a {
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+.item_list a {
+    position: relative;
+	display: block;
+	padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: #000;
+}
+.item_list a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+.item_list a:active::before {
+    background-color: #000;
+}
+.item_list a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+
+
+#team_name{
+	font-size; 50px;
+}
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid-list {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.ch-grid-list li {
+	width: 160px;
+	height: 40px;
+	display: inline-block;
+    margin: 20px;
+}
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	box-shadow: 
+		inset 0 0 0 0 rgba(96, 222, 226, 0.4);
+		
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+
+/*IMAGENS*/
+
+/* COORDENAÇÃO */
+
+.ch-img-1 { 
+	background-image: url(../images/team/Coordenação/António_Farracho.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-2 { 
+	background-image: url(../images/team/Coordenação/Diogo_Gonçalves.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-3 { 
+	background-image: url(../images/team/Coordenação/Gonçalo_Mendes.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-4 { 
+	background-image: url(../images/team/Coordenação/Xavier_Reis.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+/* CONTACTO EMPRESARIAL */
+
+.ch-img-5 { 
+	background-image: url(../images/team/Contacto_Empresarial/Alexandre_Baleia.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-6 { 
+	background-image: url(../images/team/Contacto_Empresarial/André_Pereira.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-7 { 
+	background-image: url(../images/team/Contacto_Empresarial/Catarina_Silva.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-8 { 
+	background-image: url(../images/team/Contacto_Empresarial/Filipa_Ribeiro.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-9 { 
+	background-image: url(../images/team/Contacto_Empresarial/Inês_Melo.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-10 { 
+	background-image: url(../images/team/Contacto_Empresarial/Inês_Roça.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-11 { 
+	background-image: url(../images/team/Contacto_Empresarial/João_Carvalho.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-12 { 
+	background-image: url(../images/team/Contacto_Empresarial/Luís_Almeida.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-13 { 
+	background-image: url(../images/team/Contacto_Empresarial/Madalena_Moreira.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-14 { 
+	background-image: url(../images/team/Contacto_Empresarial/Magali_Correia.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-15 { 
+	background-image: url(../images/team/Contacto_Empresarial/Manuel_Diniz.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-16 { 
+	background-image: url(../images/team/Contacto_Empresarial/Maria_Teles.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-17 { 
+	background-image: url(../images/team/Contacto_Empresarial/Pedro_Martins.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-18 { 
+	background-image: url(../images/team/Contacto_Empresarial/Rita_Machado.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-19 { 
+	background-image: url(../images/team/Contacto_Empresarial/Samuel_Pina.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-20 { 
+	background-image: url(../images/team/Contacto_Empresarial/Sara_Bernardes.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+/* DEVELOPMENT */
+
+.ch-img-21 { 
+	background-image: url(../images/team/Development/Beatriz_Marques.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-22 { 
+	background-image: url(../images/team/Development/Daniel_Cordeiro.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-23 { 
+	background-image: url(../images/team/Development/João_Vieira.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-24 { 
+	background-image: url(../images/team/Development/Leandro_Almeida.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-25 { 
+	background-image: url(../images/team/Development/Nuno_Nico.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-26 { 
+	background-image: url(../images/team/Development/Sérgio_Marinheiro.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+/* MARKETING */
+
+.ch-img-27 { 
+	background-image: url(../images/team/Marketing/Ana_Silvestre.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-28 { 
+	background-image: url(../images/team/Marketing/Carolina_Lopes.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-29 { 
+	background-image: url(../images/team/Marketing/Carolina_Roque.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-30 { 
+	background-image: url(../images/team/Marketing/Carolina_Salvador.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-31 { 
+	background-image: url(../images/team/Marketing/Jamilson_Júnior.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-32 { 
+	background-image: url(../images/team/Marketing/José_Correia.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-33 { 
+	background-image: url(../images/team/Marketing/Sara_Barroso.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+/* ORADORES */
+
+.ch-img-34 { 
+	background-image: url(../images/team/Oradores/Beatriz_Albergaria.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-35 { 
+	background-image: url(../images/team/Oradores/Diogo_Meneses.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-36 { 
+	background-image: url(../images/team/Oradores/Sophie_Taboada.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-37 { 
+	background-image: url(../images/team/Oradores/Telmo_Felgueira.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.ch-img-38 { 
+	background-image: url(../images/team/Oradores/Teresa_Araújo.jpg);
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center; 
+}

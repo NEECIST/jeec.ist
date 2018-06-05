@@ -1,0 +1,769 @@
+/* ==================================================
+   CSS Imports
+================================================== */
+
+@import url("reset.css");
+@import url("owlcarousel.css");
+@import url("uikit.scrollspy.css");
+
+/* ==================================================
+   Icon Fonts
+================================================== */
+
+@import url("fonts/fontawesome/font-awesome.css");
+
+/* ==================================================
+   Google Fonts
+================================================== */
+
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic,900,900italic");
+
+/* ==================================================
+   Global Styles
+================================================== */
+
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html
+{
+	height: 100%;
+	overflow: auto;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body
+{
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: 300;
+	color: #999;
+	background: #E8E8E8;
+
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+::selection
+{
+	background: #149077;
+	color: #FFF;
+}
+
+::-moz-selection
+{
+	background: #149077;
+	color: #FFF;
+}
+
+a
+{
+	color: #16A085;
+	text-decoration: none;
+}
+
+
+	a:hover
+	{
+		color: #444;
+	}
+
+/* ==================================================
+   Default Typography
+================================================== */
+
+p
+{
+	margin: 0 0 20px 0;
+	color:black;
+}
+
+strong
+{
+	font-weight: 600;
+}
+
+em
+{
+	font-style: italic;
+}
+
+h1, h2, h3
+{
+	font-size: 60px;
+	line-height: 60px;
+	margin: 0 0 20px 0;
+	letter-spacing: -1px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+#slide{
+	color:black;
+}
+
+	h2
+	{
+		font-size: 38px;
+		line-height: 38px;
+	}
+
+	h3
+	{
+		font-size: 32px;
+		line-height: 32px;
+	}
+
+/* ==================================================
+   Background Colours
+================================================== */
+
+.colour1
+{
+	background: RGB(33,151,212);
+}
+
+.colour2
+{
+	background:RGB(35,33,37);
+}
+
+.colour3
+{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url('../images/ico/Mission.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* ==================================================
+   General Layout Styles
+================================================== */
+
+/*NAVIGATION BAR STYLE */
+.navbar{
+    margin-bottom:0;
+    border-radius:0;
+    padding: 0;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color:white;
+    background:#009DE0;
+}
+
+.navbar-inverse .navbar-brand {
+    color:white;
+    background:RGB(35,33,37);
+    font-size:20px;
+}
+
+
+
+#blash:hover {
+	color:white;
+    background:RGB(35,33,37) !important;
+}
+
+ button.navbar-toggle{
+     color: white;
+ }
+
+
+.navbar-inverse .navbar-nav>li>a{
+    color:white;
+    font-size:15px;
+}
+
+.dropdown-menu>li>a{
+    color:white;
+    font-size:15px;
+}
+
+#drop{
+    background:RGB(35,33,37);
+    padding:5px;
+}
+#mainNav a:hover{
+   color:white;
+   background-color: #009DE0;
+}
+
+#mainNav .navbar-brand a, #mainNav li{
+   color:white;
+   background-color: RGB(35,33,37);
+}
+
+#flagImage {
+	width:auto;    
+	height: 18px;
+}
+
+.video-container {
+  position: relative;
+}
+
+video {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+
+ .phrase {
+	font-family:Source Sans Pro;
+  z-index: 1000;
+  position: relative;
+  top: 55%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+
+/*FULL WIDTH CONTAINERS*/
+
+.fullwidth
+{
+	width: 100%;
+	padding: 60px 30px;
+	min-width: 280px;
+}
+
+	.fullwidth .bodycontainer
+	{
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1000px;
+		text-align: center;
+	}
+
+/*COUNTDOWN STYLE*/
+
+#countdown
+{
+	color: #FFF;
+	margin-top: 0;
+}
+
+	#countdown #countdowncont
+	{
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+		#countdown #countdowncont ul#countscript li
+		{
+			float: left;
+			width: 25%;
+			padding: 30px 0;
+			margin: 0;
+			list-style-type: none;
+		}
+
+			#countdown #countdowncont ul#countscript li span
+			{
+				font-size: 80px;
+				line-height: 80px;
+				font-weight: 300;
+				color: #FFF;
+			}
+
+			#countdown #countdowncont ul#countscript li p
+			{
+				color: rgba(255, 255, 255, 0.6);
+				font-weight: 300;
+				text-transform: uppercase;
+				font-size: 18px;
+				line-height: 18px;
+				margin: 0;
+			}
+
+			#slogan1
+			{
+				color:white;
+				font-size:40px;
+			}
+				#slogan2
+			{
+				color:black;
+				font-size:50px;
+				margin-bottom:10px
+			}
+
+
+/*CAROUSEL STYLE*/
+
+#quotecont
+{
+	padding: 30px 0;
+}
+
+	#quotecont .owl-theme .owl-controls .owl-page span
+	{
+		background: RGB(130,130,130);
+	}
+
+		#quotecont .owl-theme .owl-controls .owl-page.active span,
+		#quotecont .owl-theme .owl-controls.clickable .owl-page:hover span
+		{
+			background: RGB(33,151,212);
+		}
+
+
+/*TITULOS*/
+header {
+        /* color: rgba(255, 255, 255, 0.75); */
+        font-family: "Roboto", Helvetica, sans-serif;
+        font-size: 30px;
+    }
+
+header.major:after {
+    background: RGB(33,151,212);
+    content: '';
+    display: inline-block;
+    height: 0.1em;
+    max-width: 20em;
+    width: 25%;
+}
+
+/*FOOTER STYLE*/
+
+#footercont
+{
+	position: relative;
+	font-size: 18px;
+    display: inline;
+}
+
+    #logos{
+        width: 300px;
+	}
+	
+	#logos1{
+		width: 270px;
+		margin-left:30px;
+	
+    }
+
+
+	#footercont p.backtotop
+	{
+		margin: 0 0 40px 0;
+	}
+
+		#footercont p.backtotop a
+		{
+			position: relative;
+			display: inline-block;
+			background: #EEE;
+			font-size: 32px;
+			line-height: 32px;
+			color: #999;
+			padding: 5px 12px;
+
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+		}
+
+			#footercont p.backtotop a:hover
+			{
+				background-color: RGB(33,151,212);
+				color: #FFF;
+				text-decoration: none;
+			}
+
+				#footercont p.backtotop a:active
+				{
+					top: 2px;
+				}
+
+
+
+/* ==================================================
+   Responsive Media Queries - Tablets
+================================================== */
+
+@media screen and (max-width: 768px)
+{
+
+	body
+	{
+		font-size: 23px;
+		line-height: 29px;
+	}
+
+    #slogan1
+{
+	color:white;
+	font-size:40px;
+}
+
+
+
+	#countdown #countdowncont
+	{
+		max-width: 400px;
+	}
+
+		#countdown #countdowncont ul#countscript li
+		{
+			width: 50%;
+			padding: 10px 0;
+		}
+
+			#countdown #countdowncont ul#countscript li span
+			{
+				font-size: 70px;
+				line-height: 70px;
+			}
+
+	#quotecont
+	{
+		padding: 15px 0;
+	}
+
+
+	#footercont
+	{
+		font-size: 19px;
+	}
+
+		#footercont #footerleft
+		{
+			float: none;
+			padding: 30px 0;
+			text-align: center;
+		}
+
+
+		#footercont #footerright
+		{
+			float: none;
+		}
+
+}
+
+/* ==================================================
+   Responsive Media Queries - Mobiles
+================================================== */
+
+@media screen and (max-width: 480px)
+{
+
+	body
+	{
+		font-size: 21px;
+		line-height: 27px;
+	}
+
+    #slogan1
+{
+	color:white;
+	font-size:30px;
+}
+
+
+	#countdown #countdowncont ul#countscript li
+	{
+		padding: 6px 0;
+	}
+
+		#countdown #countdowncont ul#countscript li span
+		{
+			font-size: 62px;
+			line-height: 62px;
+		}
+
+		#countdown #countdowncont ul#countscript li p
+		{
+			font-size: 16px;
+			line-height: 16px;
+		}
+
+
+	#quotecont
+	{
+		padding: 5px 0;
+	}
+
+}
+
+/*SPEAKERS*/
+
+
+.modal-open{
+	padding-right: 0 !important;
+}
+
+.modal-dialog{
+	margin-top: 10%;
+	width: 55%;
+}
+
+#speakersm{
+	margin-top: 2%;
+	width: 70%;
+}
+
+
+
+.modal.fade{
+  opacity:1;
+}
+.modal.fade .modal-dialog {
+   -webkit-transform: translate(0);
+   -moz-transform: translate(0);
+   transform: translate(0);
+}
+
+
+
+#image_frontpage{
+	opacity: 1;
+	display: block;
+	width: 80%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+  }
+  
+  .middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	width:70%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  .middle1 {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	width:70%;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+
+  #image:hover #image_frontpage {
+	opacity: 0.3;
+  }
+  
+ 
+  #image1:hover .middle1 {
+	opacity: 1;
+  }
+  
+  #image:hover .middle {
+	opacity: 1;
+  }
+  
+  .text {
+	color: black;
+	font-size: 25px;
+	padding: 16px 32px;
+  }
+
+
+/*CONTACTOS*/
+.centerBlock {
+	display: table;
+	margin: auto;
+  }
+
+
+  /*PROGRAMA*/
+
+  #calendar_container{
+	padding-top:50px !important;
+	padding-bottom:50px !important;
+	background-color:white;
+}
+
+#name{
+	text-transform: none;
+}
+
+#sign{
+	font-size:20px;
+}
+
+#comp_name
+{
+	font-size:25px;
+	color:black;
+}
+
+  /*EQUIPA*/
+
+#teams
+{
+	font-size: 25px;
+	color: black;
+}
+
+#teams:hover {
+    text-decoration: underline;
+}
+
+#name1{
+	font-size: 25px;
+	color: black;
+	text-transform: none;
+	
+}
+#name3{
+	font-size: 20px;
+	color: black;
+	text-transform: none;
+	
+}
+
+#name2{
+	font-size: 35px;
+	color: black;
+	text-transform: none;
+}
+
+  /*PAINEIS*/
+  .hovereffect {
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+	background: #42b078;
+  }
+  
+  .hovereffect .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	padding: 50px 20px;
+  }
+  
+  .hovereffect img {
+	display: block;
+	position: relative;
+	max-width: none;
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .hovereffect:hover img {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+  }
+  
+  .hovereffect h2 {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	font-size: 17px;
+	overflow: hidden;
+	padding: 0.5em 0;
+	background-color: transparent;
+  }
+  
+  .hovereffect h2:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+  }
+  
+  .hovereffect:hover h2:after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+  }
+  
+  .hovereffect a, .hovereffect p {
+	color: #FFF;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+  }
+  
+  .hovereffect:hover a, .hovereffect:hover p {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+  }
+
+
+  /*FOOTER*/
+  #icons .fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 70px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 20px;
+	border-radius: 50%;
+  }
+  
+  #icons .fa:hover {
+	  opacity: 0.7;
+  }
+  
+  #icons .fa-facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  #icons .fa-instagram {
+	background: #125688;
+	color: white;
+  }
+
+  #icons .fa-youtube {
+	background: #bb0000;
+	color: white;
+  }
+
+  #icons .fa-twitter {
+	background: #55ACEE;
+	color: white;
+  }
+  

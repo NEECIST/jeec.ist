@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JEEC|17 - Jornadas de Engenharia Eletrotécnica e de Computadores</title>
+    <link rel="icon" href="img/site.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider2.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+    
+        @font-face {
+            font-family: title;
+            src: url(fonts/NexusSansScCompPro.woff);
+        }
+        
+        @font-face {
+            font-family: normaltext;
+            src: url(fonts/NexusSansCompPro.woff);
+        }
+
+        h1, h2, h3, h4, h5, h6{
+            font-family: title;        
+        }
+        
+        p, div{
+            font-family: normaltext;
+        }
+        
+        p{
+            font-size: 18px;
+        }
+    
+    </style>
+    
+</head>
+
+<body>
+
+    <!-- Navigation -->
+     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="position:fixed">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a id="myBrand"  class="navbar-brand" href="index_En.html">JEEC|17</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <!--dropdown dropdown-toggle dropdown-menu li {
+                     color : yellow}-->
+                    <li class="dropdown">
+                                <a href="#"  id="myDrop"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ACTIVITIES <span class="caret"></span></a>
+                                <ul  class="dropdown-menu" >
+                                    <li><a href="notavailable.html">PANELS</a></li>
+                                    <li><a href="activity_lecture.html">LECTURE</a></li>
+                                    <li><a href="activity_workshops.html">WORKSHOPS</a></li>
+                                    <li><a href="activity_matchmaking.html">MATCHMAKING</a></li>
+                                    <li><a href="activity_fastmeeting.html">FASTMEETING by NEEC</a></li>
+                                </ul>
+                            </li>
+                    <li>
+                        <a href="schedule.html">SCHEDULE</a>
+                    </li>
+                    <li>
+                        <a href="speakers_EN.html">SPEAKERS</a>
+                    </li>
+                    <li>
+                        <a href="partner.html">PARTNERS</a>
+                    </li>
+                    <li >
+                        <a href="team.html">TEAM</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">CONTACTS</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="https://jeec.tecnico.ulisboa.pt/~jeec.daemon/16/index_en.html" target="_blank">JEEC|16</a>
+                    </li>
+                    <li>
+                        <a id="flagPTReplace" href="contactos.html">
+                            <img id="flagImage" src="img/pt_flag_v2.png">
+                        </a>
+                    </li>
+                    <li>
+                        <!--   <span style="padding-left:5px"></span> -->
+                        <a id="flagUKReplace" href="contacts.html">
+                            <img id="flagImage" src="img/uk_flag_v2.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+   
+
+    <!-- Page Content -->
+    <section>
+
+        <br>
+        <br>
+
+        <!-- Coordenação Row -->
+        <div class="container">       
+                <header class="major" style="text-align:center;margin-top:80px; margin-bottom:60px">
+                    <h1 style=" margin-bottom:10px">CONTACTS</h1></header>
+        </div>
+        
+        <div class="container" style="background-color: #f1f1f1; margin-bottom:30px">
+            
+            <div class="row" style="background-color: #f1f1f1; padding-bottom: 40px; padding-top: 40px">
+                <div class="col-md-6" style="padding-left: 7%">
+                    <div class="row">
+                        <p><b>Address:</b></p>
+                        <p>Instituto Superior Técnico, Main Building</p>
+                        <p>Avenida Rovisco Pais nº1</p>
+                        <p>1049-001 Lisboa</p>
+                        <p>Portugal</p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="row" style="margin-bottom: 10px">
+                        <p><b>Mail:</b></p>
+                        <p><a href="mailto:jeec17@neecist.org?Subject=Information%20JEEC|17" target="_top">jeec17@neecist.org</a></p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div id="map" style="width:100%;height:300px;"></div>
+
+                    <script>
+                        function myMap() {
+                            var mapCanvas = document.getElementById("map");
+                            var location = new google.maps.LatLng(38.7368,-9.1387);
+                            var mapOptions = {
+                                center: location,
+                                zoom: 17
+                            };
+                            var map = new google.maps.Map(mapCanvas, mapOptions);
+                            
+                            var marker = new google.maps.Marker({
+                                position: location,
+                                map: map,
+                                title: 'JEEC|17'
+                            });
+                            marker.setMap(map);
+                        }
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <br>
+        
+    </section>
+
+
+    <footer id="footer">
+        <ul style="padding-left: 0">
+            <a href="http://deec.ist.utl.pt/" target="_blank"><img id="logos" src="img/deec.png" border="0"></a>
+            <a href="http://tecnico.ulisboa.pt" target="_blank"><img id="logos" src="img/IST.png" border="0"></a>
+            <a href="http://neecist.org/" target="_blank"><img id="logos" src="img/neeclogo.png" border="0"></a>
+        </ul>
+    </footer>
+    
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
+
+
+<!--<footer id="footer">
+                    <ul>
+                        <a href="http://deec.ist.utl.pt/"><img id="logos" src="img/deec.png" border="0"></a>
+                        <a href="http://tecnico.ulisboa.pt"><img id="logos" src="img/IST.png" border="0"></a>
+                        <a href="http://neecist.org/" ><img id="logos" src="img/neeclogo.png" border="0"></a>
+                    </ul>
+</footer>-->

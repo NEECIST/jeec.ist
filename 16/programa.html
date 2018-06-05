@@ -1,0 +1,436 @@
+<!DOCTYPE HTML>
+<!--
+    Landed by HTML5 UP
+    html5up.net | @n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>JEEC|16 - Programa</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />        
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-69784459-2', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <link rel='stylesheet' href='lib/cupertino/jquery-ui.min.css' />
+        <link href='fullcalendar.css' rel='stylesheet' />
+        <link href='fullcalendar.print.css' rel='stylesheet' media='print' />
+        <script src='lib/moment.min.js'></script>
+        <script src='lib/jquery.min.js'></script>
+        <script src='fullcalendar.min.js'></script>
+        <script src='lang-all.js'></script>
+        <script type="text/javascript" src='http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.js'></script>
+        <script type="text/css" src='http://cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.css'></script>
+        <script>
+
+            $(document).ready(function() {                
+                $('#calendar').fullCalendar({
+                    theme: true,
+                    lang : "pt",
+                    header: {
+                        left: '',
+                        center: 'title',
+                        right: 'agendaWeek'
+                    },
+                    titleFormat: '[7 a 11 de Março]',
+                    defaultDate: '2016-03-07',
+                    eventOverlap : false,
+                    editable: false,
+                    weekends: false,
+                    defaultView: 'agendaWeek',
+                    allDaySlot : false,
+                    eventLimit: true, 
+                    minTime: "10:00",
+                    maxTime: "19:00",
+                    slotLabelFormat:"HH:mm",
+                    events: [
+                        {
+                            id: 1,
+                            title: 'Visitas de Estudo do Ensino Secundário',
+                            description: '',
+                            start: '2016-03-07T10:00:00',
+                            end: '2016-03-07T12:30:00',
+                            color: "#FFD966",
+                        },
+                        {
+                            id: 2,
+                            title: 'Almoço',
+                            start: '2016-03-07T12:30:00',
+                            end: '2016-03-07T14:00:00',
+                            description : '',
+                            color:"#D9D9D9"
+                        },
+                        {
+                            id: 3,
+                            title: 'Sessão de Abertura',
+                            start: '2016-03-07T14:00:00',
+                            end: '2016-03-07T15:30:00',
+                            description : "Lançamento da nova marca JEEC - By<br>Direcção ",
+                            color: "#9999FF"
+                        },
+                        {
+                            id: 4,
+                            title: 'Palestra',
+                            start: '2016-03-07T15:30:00',
+                            end: '2016-03-07T17:00:00',
+                            description : '"Crescimento Exponencial, Wearables, Apps e Futuro" - Pedro Janela (CEO WY Group)',
+                            color: "#A9D08E"
+                        },
+                        {
+                            id: 5,
+                            title: 'Workshop',
+                            start: '2016-03-07T17:00:00',
+                            end: '2016-03-07T18:00:00',
+                            description : '"Personal Branding" - P&G',
+                            color : "#DD8BC8"
+                        },
+                        {
+                            id: 6,
+                            title: 'Matchmaking',
+                            description: 'KPMG, Infosistema, Synopsys e Siemens',
+                            start: '2016-03-08T10:00:00',
+                            end: '2016-03-08T11:00:00',
+                            color : "#F4B084"
+                        },
+                        {
+                            id: 7,
+                            title: 'Painel das Mulheres',
+                            start: '2016-03-08T11:00:00',
+                            end: '2016-03-08T12:30:00',
+                            description : '"O papel das Mulheres no mundo da Engenharia" - Accenture, BPi e FPC',
+                            color : "#9BC2E6",
+                            url : "http://jeec.tecnico.pt/jeec16/painel.html#mulheres"
+                        },
+                        {
+                            id: 8,
+                            title: 'Almoço',
+                            start: '2016-03-08T12:30:00',
+                            end: '2016-03-08T13:30:00',
+                            description : '',
+                            color:"#D9D9D9"
+                        },
+                        {
+                            id: 9,
+                            title: 'Painel de Sistemas, Decisão e Controlo ',
+                            start: '2016-03-08T13:30:00',
+                            end: '2016-03-08T15:00:00',
+                            description : '"O papel das PMEs tecnológicas no Portugal inovador: Exemplos na área da Robótica"',
+                            color : "#9BC2E6",
+                            url: 'http://jeec.tecnico.pt/jeec16/painel.html#sdc'
+                        },
+                        {
+                            id: 10,
+                            title: 'Palestra',
+                            start: '2016-03-08T15:30:00',
+                            end: '2016-03-08T16:00:00',
+                            description : '"Big Data" - Accenture',
+                            color : "#A9D08E"
+                        },
+                        {
+                            id: 11,
+                            title: 'Matchmaking',
+                            start: '2016-03-08T16:00:00',
+                            end: '2016-03-08T17:00:00',
+                            description : 'EDP, Novabase, BOLD International e Celfinet',
+                            color : "#F4B084"
+                        },
+                        {
+                            id: 12,
+                            title: 'Workshop',
+                            start: '2016-03-08T17:00:00',
+                            end: '2016-03-08T18:30:00',
+                            description : '"Internet of Things" - BOLD Techsensys',
+                            color: "#DD8BC8"
+                        },
+                        {
+                            id: 13,
+                            title: 'Matchmaking',
+                            description: 'NOKIA, Altran, Celfinet, Vodafone e Faber Ventures',
+                            start: '2016-03-09T10:00:00',
+                            end: '2016-03-09T11:00:00',
+                            color : "#F4B084"
+                        },
+                        {
+                            id: 14,
+                            title: 'Painel de Empreendedorismo',
+                            start: '2016-03-09T11:00:00',
+                            end: '2016-03-09T12:30:00',
+                            description : '"Empreendedorismo é fixe, mas vou enriquecer',
+                            color : "#9BC2E6",
+                            url :"http://jeec.tecnico.pt/jeec16/painel.html#empreend"
+                        },
+                        {
+                            id: 15,
+                            title: 'Almoço',
+                            start: '2016-03-09T12:30:00',
+                            end: '2016-03-09T14:00:00',
+                            description : '',
+                            color:"#D9D9D9"
+                        },
+                        {
+                            id: 16,
+                            title: 'Painel de Energias',
+                            start: '2016-03-09T14:00:00',
+                            end: '2016-03-09T15:30:00',
+                            description : ' "Trabalho e Empreendedorismo na Área de Energia “made in IST""',
+                            color : "#9BC2E6",
+                            url : 'http://jeec.tecnico.pt/jeec16/painel_en.html#energ'
+                        },
+                        {
+                            id: 17,
+                            title: 'Workshop',
+                            start: '2016-03-09T15:30:00',
+                            end: '2016-03-09T17:00:00',
+                            description : '',
+                            color: "#DD8BC8",
+                            description: '"Net Frontend" - Diamond by BOLD',
+                            url: 'http://jeec.tecnico.pt/jeec16/workshop.html'
+                        },
+                        {
+                            id: 18,
+                            title: 'Palestra',
+                            start: '2016-03-09T16:00:00',
+                            end: '2016-03-09T16:30:00',
+                            description : 'Mobile Network Intelligence - Celfinet',
+                            color : "#A9D08E"
+                        },
+                        {
+                            id: 50,
+                            title: 'Palestra',
+                            start: '2016-03-09T16:30:00',
+                            end: '2016-03-09T17:00:00',
+                            description : 'WEG',
+                            color : "#A9D08E"
+                        },
+                        {
+                            id: 19,
+                            title: 'Palestra',
+                            description: 'a definir - Unbabel',
+                            start: '2016-03-09T17:00:00',
+                            end: '2016-03-09T18:30:00',
+                            color : "#A9D08E"
+                        },
+                        {
+                            id: 19,
+                            title: 'Palestra',
+                            description: 'Thales & Edisoft',
+                            start: '2016-03-10T10:00:00',
+                            end: '2016-03-10T11:00:00',
+                            color : "#A9D08E"
+                        },
+                        {
+                            id: 20,
+                            title: 'Painel de Telecomunicações ',
+                            start: '2016-03-10T11:00:00',
+                            end: '2016-03-10T12:30:00',
+                            description : 'Uma Visão sobre a 5ª Geração das Comunicações Móveis',
+                            color : "#9BC2E6",
+                            url : "http://jeec.tecnico.pt/jeec16/painel.html#tele"
+                        },
+                        {
+                            id: 21,
+                            title: 'Almoço',
+                            start: '2016-03-10T12:30:00',
+                            end: '2016-03-10T14:00:00',
+                            description : '',
+                            color:"#D9D9D9"
+                        },
+                        {
+                            id: 22,
+                            title: 'Painel de Electrónica e Computadores',
+                            start: '2016-03-10T14:00:00',
+                            end: '2016-03-10T15:30:00',
+                            description : 'Internet of Things',
+                            color : "#9BC2E6",
+                            url : "http://jeec.tecnico.pt/jeec16/painel.html#pcelect"
+                        },
+                        {
+                            id: 23,
+                            title: 'Palestra',
+                            start: '2016-03-10T15:30:00',
+                            end: '2016-03-10T16:00:00',
+                            description : '"Safety Management in Aeronautics: Why do I care?" - By CRITICAL Software & iTGROW',
+                            color : "#A9D08E"
+                        },
+                        {
+                            id: 24,
+                            title: 'Palestra',
+                            start: '2016-03-10T16:00:00',
+                            end: '2016-03-10T17:00:00',
+                            description : 'Deloitte',
+                            color : "#A9D08E"
+                        },
+                        {
+                            id: 25,
+                            title: 'Workshop',
+                            start: '2016-03-10T17:00:00',
+                            end: '2016-03-10T18:00:00',
+                            description : '"Da candidatura ao emprego" - Everis',
+                            color : "#DD8BC8"
+                        },
+                        {
+                            id: 26,
+                            title: 'Sessão de Encerramento',
+                            start: '2016-03-11T11:00:00',
+                            end: '2016-03-11T12:00:00',
+                            description : 'Entrega do Prémio Luís Vidigal',
+                            color : "#9999FF"
+                        },
+                        {
+                            id: 27,
+                            title: 'Almoço',
+                            start: '2016-03-11T12:30:00',
+                            end: '2016-03-11T14:00:00',
+                            description : '',
+                            color:"#D9D9D9"
+                        },
+                        {
+                            id: 26,
+                            title: 'Palestra',
+                            start: '2016-03-11T10:00:00',
+                            end: '2016-03-11T10:30:00',
+                            description : 'a definir',
+                            color : "#A9D08E"
+                        },
+                        {
+                            id: 26, 
+                            title: 'Inauguração do Laboratório Luís Vidigal',
+                            start: '2016-03-11T10:30:00',
+                            end: '2016-03-11T11:00:00',
+                            description : '',
+                            color : "#FFD966"
+                        }
+                    ],
+                    eventRender: function(event, element)
+                    { 
+                        element.find('.fc-title').append("<br/>" + event.description); 
+                    },
+                    eventAfterRender: function(event, element, view)
+                    {
+                        $(element).css('width','102%');
+                    },
+                       eventClick: function(event) {
+                        if (event.url) {
+                            window.open(event.url, "_blank");
+                            return false;
+                        }
+                    },
+                    timeFormat: 'H:mm',
+                                    
+                });
+                
+            });
+
+        </script>
+
+        <style>
+
+            #calendar {
+                max-width: 100%;
+                margin: 0 auto;
+                font-weight: bold;
+            }
+            span {
+                font-weight: bold;
+                color: black;
+            }
+
+
+            .fc-title{
+                text-align: center;
+                font-size: 12px;
+                vertical-align: middle;
+                color:black;
+            }
+            .fc-day-header .ui-widget-header{
+                font-weight: bold;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="page-wrapper">
+
+            <!-- Header -->
+                <header id="header">
+                    <h1 id="logo"><a href="index.html">JEEC|16</a></h1>
+                    <nav id="nav">
+                        <ul>
+                            <li>
+                                <a href="#">Evento</a>
+                                <ul>
+                                    <li><a href="actividades.html">Actividades</a></li>
+                                    <li><a href="programa.html">Programa</a></li>
+                                    <li><a href="painel.html">Painéis</a></li>
+                                    <li><a href="bancas.html">Bancas Tecnológicas</a></li>
+                                    <li><a href="workshop.html">Workshops</a></li>
+                                    <li><a href="demo.html">Demonstrações</a></li>
+                                    <li><a href="location.html">Localização</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="parceiros.html">Patrocinadores</a></li>
+                            <li><a href="equipa.html">Equipa</a></li>
+                            <li><a href="contact.html">Contacte-nos</a></li>
+                            <li>
+                                <a href="programa.html"><img id ="flagImage" src="images/pt_flag_v2.png"></a> <span style="padding-left:5px"></span><a href="programa_en.html"><img id ="flagImage" src="images/uk_flag_v2.png"></a>
+                            </li>
+                            <li><a href="novidades.html" class="button special">Novidades</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+            <!-- Main -->
+                <div id="main" class="wrapper style1">
+                    <div class="container">
+                        <header class="major" style="position:relative;top:-40px">
+                            <h2>Programa</h2>
+                        </header>                        
+                    </div>
+                    <div id='calendar'></div>
+                </div>
+
+            <!-- Footer -->
+                <footer id="footer">
+                    <ul>
+                        <a href="http://deec.ist.utl.pt/"><img id="logos" src="images/deec2.png" border="0"></a>
+                        <a href="http://tecnico.ulisboa.pt"><img id="logos" src="images/IST_A_RGB_NEG.png" border="0"></a>
+                        <a href="http://neecist.org/" ><img id="logos" src="images/neeclogo2.png" border="0"></a>
+                    </ul>
+                    <ul class="icons">
+                        <li><a href="https://www.facebook.com/JEECIST" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://twitter.com/jeecist" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <!--<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>-->
+                        <li><a href="mailto:margarida.reis@tecnico.ulisboa.pt" class="icon fa-envelope"><span class="label">Email</span></a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; JEECIST. All rights reserved.</li><li>Design: JEEC|16 &amp; <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </footer>
+
+        </div>
+
+        <!-- Scripts -->
+            
+
+    </body>
+</html>

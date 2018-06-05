@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JEEC|17 - Jornadas de Engenharia Eletrotécnica e de Computadores</title>
+    <link rel="icon" href="img/site.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider2.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->    
+        
+    <style>
+    
+        @font-face {
+            font-family: title;
+            src: url(fonts/NexusSansScCompPro.woff);
+        }
+        
+        @font-face {
+            font-family: normaltext;
+            src: url(fonts/NexusSansCompPro.woff);
+        }
+
+        h1, h2, h3, h4, h5, h6{
+            font-family: title;        
+        }
+        
+        p, div{
+            font-family: normaltext;
+        }
+        
+        p{
+            font-size: 18px;
+        }
+        
+        $('#monitor').html($(window).width());
+
+        $(window).resize(function() {
+            var viewportWidth = $(window).width();
+            $('#monitor').html(viewportWidth);
+        });
+        
+    </style>
+    
+    
+    
+    
+    
+    
+</head>
+
+<body>
+    <!-- Navigation -->
+     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="position:fixed">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a id="myBrand"  class="navbar-brand" href="index.html" style="position:fixed">JEEC|17</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <!--dropdown dropdown-toggle dropdown-menu li {
+                     color : yellow}-->
+                    <li class="dropdown">
+                        <a href="#"  id="myDrop"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ATIVIDADES <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="construcao.html">PAINEIS</a></li>
+                            <li><a href="atividades_palestras.html">PALESTRAS</a></li>
+                            <li><a href="atividades_workshops.html">WORKSHOPS</a></li>
+                            <li><a href="atividades_matchmaking.html">MATCHMAKING</a></li>
+                            <li><a href="atividades_fastmeeting.html">FASTMEETING by NEEC</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="programa.html">PROGRAMA</a>
+                    </li>
+                    <li>
+                        <a href="speakers_PT.html">SPEAKERS</a>
+                    </li>
+                    <li>
+                        <a href="parceiros.html">PARCEIROS</a>
+                    </li>
+                    <li >
+                        <a href="equipa.html">EQUIPA</a>
+                    </li>
+                    <li>
+                        <a href="contactos.html">CONTACTOS</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="https://jeec.tecnico.ulisboa.pt/~jeec.daemon/16/" target="_blank">JEEC|16</a>
+                    </li>
+                    <li>
+                        <a id="flagPTReplace" href="index.html">
+                            <img id="flagImage" src="img/pt_flag_v2.png">
+                        </a>
+                    </li>
+                    <li>
+                        <!--   <span style="padding-left:5px"></span> -->
+                        <a id="flagUKReplace" href="index_En.html">
+                            <img id="flagImage" src="img/uk_flag_v2.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+            <!--<li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>-->
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner" id ="banner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/main_img2.png');"></div>
+            </div>        
+                    
+            <div class="carousel-caption">
+                 <img class="img-responsive" src="img/jeec_banner_white17.png" id="logojeec" >
+            </div>
+        </div>
+            <!--<div class="item">-->
+                <!-- Set the second background image using inline CSS below. -->
+                <!--<div class="fill" style="background-image:url('img/main_img2.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>-->
+            <!--<div class="item">-->
+                <!-- Set the third background image using inline CSS below. -->
+                <!--<div class="fill" style="background-image:url('img/main_img2.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>-->
+            <!--</div>-->
+        
+            
+        <!-- Controls -->
+        <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>-->
+        
+        
+    </header>
+
+    <!-- Page Content -->
+    <section>
+    
+        <br>
+        <br>
+        <div class="container" style="margin-top:30px;">
+
+            <div class="row">
+                <div class="col-lg-12"></div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+
+                <div class="col-sm-4" style="margin-bottom:40px;">
+                    <a data-toggle="modal" data-target="#myModal0"><img class="img img-responsive " id="image_frontpage" src="img/group.png" alt="group"></a>
+                    <!--<i class="fa fa-users fa-3x" aria-hidden="true"></i>-->
+                    <h2 style ="text-align:center" >O que é?</h2>
+                    <p  style ="text-align:center">É um evento criado por estudantes e para estudantes que permite o contacto direto 
+                    com o mercado de trabalho.
+                        <a data-toggle="modal" data-target="#myModal0" style="color:#1A7CAA; cursor:pointer;">Ler +</a>
+                    </p>
+
+                </div>
+            
+                <!-- Modal: Janela que abre ao carregar em ler + -->
+                <div class="modal fade" id="myModal0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="text-align:justify">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <div>
+                                    <img class="img img-responsive" id="janela_frontpage" src="img/group.png">
+                                </div>
+                                <!--/div-->
+                                <br>
+                                <h2 class="modal-title" id="myModalLabel" style="text-align:center">Quem Somos?</h2>
+                                <br>
+                                <!--div class="modal-body"-->
+                                <p> As Jornadas de Engenharia Eletrotécnica e de Computadores (JEEC) baseiam-se num conjunto de atividades que promovem a integração 
+                                dos alunos no mundo empresarial e que conta já com 17 edições. As atividades desenvolvidas são de caráter gratuito e estão abertas
+                                a uma comunidade estudantil de mais de 11.000 alunos. </p><p>As JEEC é um evento organizado por alunos e pensado exclusivamente 
+                                para alunos, contando com o apoio do Núcleo de Estudantes de Eletrotecnia e Computadores do Instituto Superior Técnico (NEECIST),
+                                do Departamento de Engenharia Eletrotécnica e de Computadores (DEEC) e do Instituto Superior Técnico (IST). </p>
+                            </div>
+                            <!--div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                            
+                            </div-->
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="col-sm-4" style="margin-bottom:40px;">
+                    <a data-toggle="modal" data-target="#myModal1"><img class="img img-responsive " id="image_frontpage" src="img/target0.png" alt="missão"></a>
+                    <h2 style ="text-align:center "> Missão</h2>
+                    <p style ="text-align:center">O nosso principal objetivo passa por promover o contacto entre os estudantes e as 
+                        melhores empresas do mercado de trabalho.
+                        <a data-toggle="modal" data-target="#myModal1" style="color:#1A7CAA; cursor:pointer;">Ler +</a>
+                    </p>  
+                </div>
+            
+                <!-- Modal: Janela que abre ao carregar em ler + -->
+                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="text-align:justify">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <div>
+                                    <img class="img img-responsive" id="janela_frontpage" src="img/target0.png">
+                                </div>
+                                <!--/div-->
+                                <br>
+                                <h2 class="modal-title" id="myModalLabel" style="text-align:center">Missão</h2>
+                                <br>
+                            <!--div class="modal-body"-->
+                            <p> As JEEC procuram criar pontos de ligação entre o mundo académico e o meio empresarial, facilitando o contacto entre alunos do IST, 
+                            nomeadamente os do Mestrado Integrado em Engenharia Eletrotécnica e de Computadores (MEEC), e as empresas e/ou unidades de investigação 
+                            que desenvolvem trabalhos na área da Engenharia. As JEEC procuram ainda divulgar o MEEC destacando as respetivas saídas profissionais,
+                             e o próprio IST com o objetivo de promover a instituição perante as empresas mais influentes em Portugal. </p>
+                            </div>
+                            <!--div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                        
+                        </div-->
+                        </div>
+                    </div>
+                </div>    
+    
+    
+    
+                <!--<div class="col-sm-1"> </div>-->
+                <div class="col-sm-4" style="margin-bottom:40px;">
+                    <a data-toggle="modal" data-target="#myModal2"><img class="img img-responsive " id="image_frontpage" src="img/list.png" alt="Lista"></a>
+                    <h2 style ="text-align:center" >O que fazemos?</h2>
+                    <p style ="text-align:center; ">As JEEC proporcionam aos alunos uma série de atividades que promovem 
+                    a interação aluno-empresa e a partilha de conhecimento.
+                        <a data-toggle="modal" data-target="#myModal2" style="color:#1A7CAA; cursor:pointer;">Ler +</a>
+                    </p>        
+                </div>
+
+                <!-- Modal: Janela que abre ao carregar em ler + -->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="text-align:justify">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <div>
+                                    <img class="img img-responsive" id="janela_frontpage" src="img/list.png">
+                                </div>
+                                <!--/div-->
+                                <br>
+                                <h2 class="modal-title" id="myModalLabel" style="text-align:center">O que fazemos?</h2>
+                                <br>
+                                <!--div class="modal-body"-->
+                                <p> As JEEC proporcionam aos alunos um conjunto de diversas atividades que permitem uma interação com o mundo empresarial. 
+                                Durante o período em que decorrem as JEEC, existe uma Exposição Tecnológica permanente onde se encontram diversas empresas 
+                                disponíveis para esclarecer as questões dos alunos e para apresentar atividades dinamizadas pela própria empresa.</p><p>
+                                Para além da exposição tecnológica as famosas Palestras e os Painéis de Discussão fumentam a apresentação/discussão de um tema 
+                                da atualidade, dando sempre a oportunidade aos alunos de exporem as suas questões e/ou ideias.</p><p> Os alunos podem 
+                                ainda contar com diversos workshops e mais recentemente com as sessões de Matchmaking. Uma atividade exclusiva das JEEC, 
+                                onde pequenos grupos de alunos conversam diretamente com representantes de empresas, numa conversa informal e onde lhes 
+                                é permitido apresentarem-se a si e aos seus currículos, para além de ficarem a conhecer a empresa. </p>
+                            </div>
+                            <!--div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                            </div-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
+        <div class="imageContainer"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 videoWrapper">
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/Zt9rjkHWj18" frameborder="0" 
+                    allowfullscreen></iframe>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    
+    <footer id="footer">
+        <ul style="padding-left: 0">
+            <a href="http://deec.ist.utl.pt/" target="_blank"><img id="logos" src="img/deec.png" border="0"></a>
+            <a href="http://tecnico.ulisboa.pt" target="_blank"><img id="logos" src="img/IST.png" border="0"></a>
+            <a href="http://neecist.org/" target="_blank"><img id="logos" src="img/neeclogo.png" border="0"></a>
+        </ul>
+    </footer>
+    
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
+
+
+<!--<footer id="footer">
+                    <ul>
+                        <a href="http://deec.ist.utl.pt/"><img id="logos" src="img/deec.png" border="0"></a>
+                        <a href="http://tecnico.ulisboa.pt"><img id="logos" src="img/IST.png" border="0"></a>
+                        <a href="http://neecist.org/" ><img id="logos" src="img/neeclogo.png" border="0"></a>
+                    </ul>
+</footer>-->

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link href='calendar/fullcalendar.min.css' rel='stylesheet' />
+<link href='calendar/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+<script src='calendar/lib/moment.min.js'></script>
+<script src='calendar/lib/jquery.min.js'></script>
+<script src='calendar/fullcalendar.min.js'></script>
+
+<script>
+
+    $(document).ready(function() {
+        var $fc = $("#calendar");
+        //$('#calendar').fullCalendar({
+        var options = {
+            height: 'auto',
+            header: {
+                center: 'title',
+                right: 'agendaWeek',
+                left: '',
+            },
+            
+            eventMouseover: function(calEvent, jsEvent) {
+                var tooltip = '<div class="tooltipevent" style="max-width:800px;height:auto;background:#f1f1f1;border-style:solid;border-width:2px;border-radius:5px;border-color:#262732;position:absolute;z-index:10001;padding:5px;">' + calEvent.description + '</div>';
+                $("body").append(tooltip);
+                $(this).mouseover(function(e) {
+                    $(this).css('z-index', 10000);
+                    $('.tooltipevent').fadeIn('500');
+                    $('.tooltipevent').fadeTo('10', 1.9);
+                }).mousemove(function(e) {
+                    $('.tooltipevent').css('top', e.pageY + 10);
+                    $('.tooltipevent').css('left', e.pageX + 20);
+                });
+            },
+
+            eventMouseout: function(calEvent, jsEvent) {
+                 $(this).css('z-index', 8);
+                 $('.tooltipevent').remove();
+            },
+            
+            defaultDate: '2017-03-06',
+            defaultView: 'agendaWeek',
+            minTime: '09:00:00',
+            maxTime: '19:00:00',
+            eventStartEditable: false,
+            eventDurationEditable : false,
+            slotEventOverlap: false,
+            weekends: false,
+            navLinks: true, // can click day/week names to navigate views
+            editable: true,
+            eventLimit: false, // allow "more" link when too many events
+            agendaWeek: true,
+                
+            events: [
+                {
+                    title: 'Exhibition stands',
+                    start: '2017-03-06',
+                    description: '<h3>Exhibition stands</h3><h4><b>Companies:</b><br><br> Altran, Celfinet, EDP, Epimetheus, GFI, Glintt, HackerSchool, ITGrow, ITSector, KPMG e Vodafone</h4>',
+                    backgroundColor: '#6B0CE8',
+                    borderColor: '#a36eea',
+                },
+                {
+                    title: 'Matchmaking',
+                    start: '2017-03-06T09:30:00',
+                    end: '2017-03-06T11:00:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Matchmaking: session 1</h3><h4><b>Companies:</b> Altran, Celfinet, GFI and KPMG</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/activity_matchmaking.html#session1',
+                },
+                {
+                    title: 'Lecture ITSector',
+                    start: '2017-03-06T11:00:00',
+                    end: '2017-03-06T12:00:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Lecture ITSector</h3><h4><b>Title:</b> Start up is about: get things done and selling it btw</h4>',
+                    url: 'https://jeec.tecnico.ulisboa.pt/17/activity_lecture.html#ITSector',
+                },
+                {
+                    title: 'Lecture ITGrow',
+                    start: '2017-03-06T12:00:00',
+                    end: '2017-03-06T13:00:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Lecture ITGrow</h3><h4><b>Title:</b> Sending Code to Outer Space</h4>',
+                    url: 'https://jeec.tecnico.ulisboa.pt/17/activity_lecture.html#ITGrow',
+                },
+                {
+                    title: 'Speaker - Miguel Gonçalves, Spark Agency',
+                    start: '2017-03-06T14:00:00',
+                    end: '2017-03-06T15:30:00',
+                    backgroundColor: '#FF0000',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Speaker - Miguel Gonçalves, Spark Agency</h3><h4><b>Title:</b> O Mercado Grita Talento</h4><h4>Opening session</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/speakers_EN.html#MiguelGonçalves',
+                },
+                {
+                    title: 'Fastmeeting by NEEC',
+                    start: '2017-03-06T15:30:00',
+                    end: '2017-03-06T17:30:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Fastmeeting by NEEC</h3>',
+                    url: 'https://jeec.tecnico.ulisboa.pt/17/atividades_fastmeeting.html',
+                },
+                {
+                    title: 'Workshop KPMG - E1',
+                    start: '2017-03-06T15:30:00',
+                    end: '2017-03-06T17:00:00',
+                    url: 'https://jeec.tecnico.ulisboa.pt/17/atividades_workshops.html#kpmg',
+                    backgroundColor: '#E8970C',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Workshop KPMG</h3><h4><b>Title:</b> From BuzzWords to BuzzProjects</h4>',
+                },
+                {
+                    title: 'Workshop Celfinet - E4',
+                    start: '2017-03-06T17:00:00',
+                    end: '2017-03-06T18:30:00',
+                    url: 'https://jeec.tecnico.ulisboa.pt/17/atividades_workshops.html#Celfinet',
+                    backgroundColor: '#E8970C',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Workshop Celfinet</h3><h4><b>Title:</b> InovActive Telecom Engineering</h4>',
+                },
+                {
+                    title: 'Exhibition stands',
+                    start: '2017-03-07',
+                    description: '<h3>Exhibition stands</h3><h4><b>Companies:</b><br><br> Altran, Bliss Applications, BNP Paribas, Celfinet, EDP, Epimetheus, Glintt, Junitec, KPMG, Quasar, Vodafone e WorldIT</h4>',
+                    backgroundColor: '#6B0CE8',
+                    borderColor: '#f1f1f1',
+                },
+                {
+                    title: 'Matchmaking',
+                    start: '2017-03-07T09:30:00',
+                    end: '2017-03-07T11:00:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Matchmaking: session 2</h3><h4><b>Companies:</b> Bliss Applications, BNP Paribas, Epimetheus and Vodafone</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/activity_matchmaking.html#session2',
+                },
+                {
+                    title: 'Discussion Panel',
+                    start: '2017-03-07T11:00:00',
+                    end: '2017-03-07T12:30:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    //description: '<h3>Panel - Nuclear Energy in Portugal</h3><h4><b>Moderator:</b> Prof. Sucena Paiva</h4><h4><b>Speaker:</b> Dr. Emílio Ribeiro - IST specialist</h4><h4><b>Speaker:</b> Gonçalo Mineiro - CIES-IUL researcher</h4><h4><b>Speaker:</b> Dr. Nuno Gonçalves</h4>',
+                    description: '<h3>Panel - Nuclear Energy in Portugal?</h3><h4><b>Moderator:</b> Prof. Sucena Paiva</h4><h4><b>Speakers:</b> Coming Soon</h4>',
+                },
+                {
+                    title: 'Lecture Epimetheus',
+                    start: '2017-03-07T14:00:00',
+                    end: '2017-03-07T15:00:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Lecture Epimetheus</h3><h4><b>Title:</b> Are you ready for a new challenge?</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/activity_lecture.html#Epimetheus',
+                },
+                {
+                    title: 'Discussion Panel',
+                    start: '2017-03-07T15:00:00',
+                    end: '2017-03-07T16:30:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Panel - All about IoT: Smart Cities</h3><h4><b>Moderator:</b> Prof. António Rodrigues</h4><h4><b>Speakers:</b> Coming Soon</h4>',
+                },
+                {
+                    title: 'Lecture BNP Paribas',
+                    start: '2017-03-07T16:30:00',
+                    end: '2017-03-07T17:30:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Lecture BNP Paribas</h3><h4><b>Title:</b> How to find a needle in a haystack? - a case study on Named Entity Recognition</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/activity_lecture.html#BNP',
+                },
+                {
+                    title: 'Workshop Altran - E1',
+                    start: '2017-03-07T15:30:00',
+                    end: '2017-03-07T17:00:00',
+                    url: 'https://jeec.tecnico.ulisboa.pt/17/atividades_workshops.html#Altran',
+                    backgroundColor: '#E8970C',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Workshop Altran</h3><h4><b>Title:</b> Future of TV</h4>',
+                },
+                {
+                    title: 'Workshop Vodafone - SCDEEC',
+                    start: '2017-03-07T17:00:00',
+                    end: '2017-03-07T18:30:00',
+                    url: 'https://jeec.tecnico.ulisboa.pt/17/atividades_workshops.html#Vodafone',
+                    backgroundColor: '#E8970C',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Workshop Vodafone</h3><h4><b>Title:</b> Radio Network Optimisation Challenges: from 2G to 5G</h4>',
+                },
+                {
+                    title: 'Exhibition stands',
+                    start: '2017-03-08',
+                    description: '<h3>Exhibition stands</h3><h4><b>Companies:</b><br><br> Accenture, AIESEC, Bliss Applications, Deloitte, Fujitsu, Mind Source, Novabase, PSEM, Synopsys e Thales</h4>',
+                    backgroundColor: '#6B0CE8',
+                    borderColor: '#f1f1f1',
+                },
+                {
+                    title: 'Matchmaking',
+                    start: '2017-03-08T09:30:00',
+                    end: '2017-03-08T11:00:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Matchmaking: session 3</h3><h4><b>Companies:</b> Accenture, TAP, Thales and Webdetails</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/activity_matchmaking.html#session3',
+                },
+                {
+                    title: 'Matchmaking',
+                    start: '2017-03-08T11:00:00',
+                    end: '2017-03-08T12:30:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Matchmaking: session 4</h3><h4><b>Companies:</b> EDP, Mind Source, Synopsys and TAP</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/activity_matchmaking.html#session4',
+                },
+                {
+                    title: 'Lecture Xsealence',
+                    start: '2017-03-08T14:00:00',
+                    end: '2017-03-08T15:00:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Lecture Xsealence</h3><h4><b>Title:</b> Xsealence and TICE for the sea – SeaITall project</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/activity_lecture.html#Xsealence',
+                },
+                {
+                    title: 'Discussion Panel',
+                    start: '2017-03-08T15:00:00',
+                    end: '2017-03-08T16:30:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Panel - Smart Health and Bioelectronics Engineering</h3><h4><b>Moderator:</b> Prof. Nuno Roma and Prof. Gonçalo Tavares</h4><h4><b>Speaker:</b> Filipe Cardoso, Magnomics</h4><h4><b>Speaker:</b> Ana Teresa Freitas, HeartGenetics</h4><h4><b>Speaker:</b> Filipa Fixe, Glintt</h4><h4><b>Speaker:</b> Ana Dias, Mello Saúde</h4>',
+                },
+                {
+                    title: 'Lecture TAP',
+                    start: '2017-03-08T16:30:00',
+                    end: '2017-03-08T17:30:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Lecture TAP</h3><h4><b>Title:</b> Safety in TAP</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/activity_lecture.html#TAP',
+                },
+                {
+                    title: 'Workshop Everis - E1',
+                    start: '2017-03-08T15:30:00',
+                    end: '2017-03-08T17:00:00',
+                    url: 'https://jeec.tecnico.ulisboa.pt/17/atividades_workshops.html#Everis',
+                    backgroundColor: '#E8970C',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Workshop Everis</h3><h4><b>Title:</b> Application to employment</h4>',
+                },
+                {
+                    title: 'Workshop Bliss Applications - SCDEEC',
+                    start: '2017-03-08T17:00:00',
+                    end: '2017-03-08T18:30:00',
+                    url: 'https://jeec.tecnico.ulisboa.pt/17/atividades_workshops.html#Bliss',
+                    backgroundColor: '#E8970C',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Workshop Bliss Applications</h3><h4><b>Title:</b> Hololens and Unity - augmented reality</h4>',
+                },
+                {
+                    title: 'Speaker - Richard Reiner, Intel Security',
+                    start: '2017-03-08T17:30:00',
+                    end: '2017-03-08T19:00:00',
+                    backgroundColor: '#FF0000',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Speaker - Richard Reiner, Intel Security</h3><h4><b>Title:</b> Can we solve the password crisis? Or will hackers keep stealing hundreds of millions of identities?</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/speakers_PT.html#RichardReiner',
+                },
+                {
+                    title: 'Exhibition stands',
+                    start: '2017-03-09',
+                    description: '<h3>Exhibition stands</h3><h4><b>Companies:</b><br><br> Accenture, Agora, FST Novabase, INESC, LMGE, LMIT, Microsoft, Mind Source, Novabase, Ordem dos Engenheiros, Priberam e Thales</h4>',
+                    backgroundColor: '#6B0CE8',
+                    borderColor: '#f1f1f1',
+                },
+                { 
+                    title: 'Matchmaking',
+                    start: '2017-03-09T09:30:00',
+                    end: '2017-03-09T11:00:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Matchmaking: session 5</h3><h4><b>Companies:</b> Mind Source, Novabase, Priberam and TAP</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/activity_matchmaking.html#session5',
+                },
+                {
+                    title: 'Lecture Novabase',
+                    start: '2017-03-09T11:00:00',
+                    end: '2017-03-09T12:00:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Lecture Novabase</h3><h4><b>Title:</b> Is there space for Electrical Engineering in IT\'s world</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/activity_lecture.html#Novabase',
+                },
+                {
+                    title: 'Speaker - Rui Guedes, Microsoft',
+                    start: '2017-03-09T17:30:00',
+                    end: '2017-03-09T19:00:00',
+                    backgroundColor: '#FF0000',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Speaker - Rui Guedes, Microsoft</h3><h4><b>Title:</b> VR+AR=Mixed Reality?</h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/speakers_EN.html#RuiGuedes',
+                },
+                {
+                    title: 'Lecture Accenture',
+                    start: '2017-03-09T14:00:00',
+                    end: '2017-03-09T15:00:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Lecture Accenture</h3><h4><b>Title:</b> IoT: “… and your Web, takes coffees?” </h4>',
+                    url:'https://jeec.tecnico.ulisboa.pt/17/activity_lecture.html#Accenture',
+                    
+                },
+                {
+                    title: 'Discussion Panel',
+                    start: '2017-03-09T15:00:00',
+                    end: '2017-03-09T16:30:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Panel - Autonomous Vehicles</h3><h4><b>moderator:</b> Prof. João Sequeira</h4><h4><b>Speakers:</b> Coming Soon',
+                },
+                /*{
+                    title: 'Lecture Thales',
+                    start: '2017-03-09T16:30:00',
+                    end: '2017-03-09T17:30:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Coming Soon</h3>',
+                },*/
+                {
+                    title: 'Workshop Faber Ventures - C11',
+                    start: '2017-03-09T15:30:00',
+                    end: '2017-03-09T17:00:00',
+                    url: 'https://jeec.tecnico.ulisboa.pt/17/atividades_workshops.html#Faber',
+                    backgroundColor: '#E8970C',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Workshop Faber Ventures</h3><h4><b>Title:</b> I think I have a great idea, so now what?</h4>',
+                },
+                {
+                    title: 'Workshop TAP - EA1',
+                    start: '2017-03-09T17:00:00',
+                    end: '2017-03-09T18:30:00',
+                    url: 'https://jeec.tecnico.ulisboa.pt/17/atividades_workshops.html#TAP',
+                    backgroundColor: '#E8970C',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Workshop TAP</h3><h4><b>Title:</b> Maintenance Troubleshooting Procedures of Planes</h4>',
+                },
+                {
+                    title: 'Workshop Microsoft - C10',
+                    start: '2017-03-09T11:00:00',
+                    end: '2017-03-09T12:30:00',
+                    url: 'https://jeec.tecnico.ulisboa.pt/17/atividades_workshops.html#Microsoft',
+                    backgroundColor: '#E8970C',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Coming Soon</h3>',
+                },
+                {
+                    title: 'Networking',
+                    start: '2017-03-10T11:30:00',
+                    end: '2017-03-10T13:00:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Coming Soon</h3>',
+                },
+                {
+                    title: 'Closing session',
+                    start: '2017-03-10T14:00:00',
+                    end: '2017-03-10T15:30:00',
+                    backgroundColor: '#2197D4',
+                    borderColor: '#f1f1f1',
+                    description: '<h3>Closing session</h3><h4><b>Title:</b> Digital transformation of companies, Oracle</h4>',
+                    
+                },                
+            ],
+            timeFormat: 'H:mm',
+        //});
+        }
+        
+        $fc.fullCalendar(options);
+        
+        function recreateFC(screenWidth) { // This will destroy and recreate the FC taking into account the screen size
+            if (screenWidth < 600) {
+                options.header = {
+                    left: '',
+                    center: 'title',
+                    right: 'listWeek'
+                };
+                options.defaultView = 'listWeek';
+                options.contentHeight = 1800;
+                options.eventMouseover = false;
+                options.eventMouseout = false;
+            } else {
+                options.header = {
+                    left: '',
+                    center: 'title',
+                    right: 'agendaWeek'
+                };
+                options.defaultView = 'agendaWeek';
+                options.contentHeight = 'auto';
+                options.eventMouseover = function(calEvent, jsEvent) {
+                    var tooltip = '<div class="tooltipevent" style="max-width:800px;height:auto;background:#f1f1f1;border-style:solid;border-width:2px;border-radius:5px;border-color:#262732;position:absolute;z-index:10001;padding:5px;">' + calEvent.description + '</div>';
+                    $("body").append(tooltip);
+                    $(this).mouseover(function(e) {
+                        $(this).css('z-index', 10000);
+                        $('.tooltipevent').fadeIn('500');
+                        $('.tooltipevent').fadeTo('10', 1.9);
+                    }).mousemove(function(e) {
+                        $('.tooltipevent').css('top', e.pageY + 10);
+                        $('.tooltipevent').css('left', e.pageX + 20);
+                    });
+                };
+                options.eventMouseout = function(calEvent, jsEvent) {
+                    $(this).css('z-index', 8);
+                    $('.tooltipevent').remove();
+                };
+            }
+            $fc.fullCalendar('destroy');
+            $fc.fullCalendar(options);
+        }
+
+        $(window).resize(function () { //set window resize listener
+            recreateFC($(window).width()); //or you can use $(document).width()
+        });
+        
+        recreateFC($(window).width());
+    });
+
+</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JEEC|17 - Jornadas de Engenharia Eletrotécnica e de Computadores</title>
+    <link rel="icon" href="img/site.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider2.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+<style>
+
+    #calendar {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    
+    @font-face {
+            font-family: title;
+            src: url(fonts/NexusSansScCompPro.woff);
+        }
+        
+        @font-face {
+            font-family: normaltext;
+            src: url(fonts/NexusSansCompPro.woff);
+        }
+
+        h1, h2, h3, h4, h5, h6{
+            font-family: title;        
+        }
+        
+        p, div{
+            font-family: normaltext;
+        }
+        
+        p{
+            font-size: 18px;
+        }
+        
+        $('#monitor').html($(window).width());
+
+        $(window).resize(function() {
+            var viewportWidth = $(window).width();
+            $('#monitor').html(viewportWidth);
+        });
+
+</style>
+</head>
+<body>
+    <!-- Navigation -->
+     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="position:fixed">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a id="myBrand"  class="navbar-brand" href="index_En.html">JEEC|17</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#"></a>
+                    </li>
+                    <!--dropdown dropdown-toggle dropdown-menu li {
+                     color : yellow}-->
+                    <li class="dropdown">
+                        <a href="#"  id="myDrop"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ACTIVITIES <span class="caret"></span></a>
+                        <ul  class="dropdown-menu" >
+                            <li><a href="notavailable.html">PANELS</a></li>
+                            <li><a href="activity_lecture.html">LECTURE</a></li>
+                            <li><a href="activity_workshops.html">WORKSHOPS</a></li>
+                            <li><a href="activity_matchmaking.html">MATCHMAKING</a></li>
+                            <li><a href="activity_fastmeeting.html">FASTMEETING by NEEC</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="schedule.html">SCHEDULE</a>
+                    </li>
+                    <li>
+                        <a href="speakers_EN.html">SPEAKERS</a>
+                    </li>
+                    <li>
+                        <a href="partner.html">PARTNERS</a>
+                    </li>
+                    <li >
+                        <a href="team.html">TEAM</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">CONTACTS</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="https://jeec.tecnico.ulisboa.pt/~jeec.daemon/16/index_en.html" target="_blank">JEEC|16</a>
+                    </li>
+                    <li>
+                        <a id="flagPTReplace" href="programa.html">
+                            <img id="flagImage" src="img/pt_flag_v2.png">
+                        </a>
+                    </li>
+                    <li>
+                        <!--   <span style="padding-left:5px"></span> -->
+                        <a id="flagUKReplace" href="schedule.html">
+                            <img id="flagImage" src="img/uk_flag_v2.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    
+    <section>
+        <!-- Page Content -->
+        <br>
+        <br>
+        <div class="container">
+            <header class="major" style="text-align:center;margin-top:80px; margin-bottom:60px">
+                    <h1 style=" margin-bottom:10px">SCHEDULE</h1></header>      
+            <br>
+        </div>
+        
+        <div class="container" style="margin-bottom:50px; background-color: #f1f1f1;">
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id='calendar' style="margin-top:50px; margin-bottom:50px;"></div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    
+    <footer id="footer" style="margin-bottom:0px">
+        <ul>
+            <a href="http://deec.ist.utl.pt/"><img id="logos" src="img/deec.png" border="0"></a>
+            <a href="http://tecnico.ulisboa.pt"><img id="logos" src="img/IST.png" border="0"></a>
+            <a href="http://neecist.org/" ><img id="logos" src="img/neeclogo.png" border="0"></a>
+        </ul>
+    </footer>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <!--script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+</html>

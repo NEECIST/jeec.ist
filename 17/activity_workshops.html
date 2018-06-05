@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JEEC|17 - Jornadas de Engenharia Eletrotécnica e de Computadores</title>
+    <link rel="icon" href="img/site.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider2.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+    
+        @font-face {
+            font-family: title;
+            src: url(fonts/NexusSansScCompPro.woff);
+        }
+        
+        @font-face {
+            font-family: normaltext;
+            src: url(fonts/NexusSansCompPro.woff);
+        }
+
+        h1, h2, h3, h4, h5, h6{
+            font-family: title;        
+        }
+        
+        p, div{
+            font-family: normaltext;
+        }
+        
+        p{
+            font-size: 18px;
+        }
+        
+        $('#monitor').html($(window).width());
+
+        $(window).resize(function() {
+            var viewportWidth = $(window).width();
+            $('#monitor').html(viewportWidth);
+        });
+        
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="position:fixed">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a id="myBrand"  class="navbar-brand" href="index_En.html">JEEC|17</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <!--dropdown dropdown-toggle dropdown-menu li {
+                     color : yellow}-->
+                   <li class="dropdown">
+                                <a href="#"  id="myDrop"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ACTIVITIES <span         class="caret"></span></a>
+                                <ul  class="dropdown-menu" >
+                                    <li><a href="notavailable.html">PANELS</a></li>
+                                    <li><a href="activity_lecture.html">LECTURE</a></li>
+                                    <li><a href="activity_workshops.html">WORKSHOPS</a></li>
+                                    <li><a href="activity_matchmaking.html">MATCHMAKING</a></li>
+                                    <li><a href="activity_fastmeeting.html">FASTMEETING by NEEC</a></li>
+                                </ul>
+                            </li>
+                    <li>
+                        <a href="schedule.html">SCHEDULE</a>
+                    </li>
+                    <li>
+                        <a href="speakers_EN.html">SPEAKERS</a>
+                    </li>
+                    <li>
+                        <a href="partner.html">PARTNERS</a>
+                    </li>
+                    <li >
+                        <a href="team.html">TEAM</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">CONTACTS</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="https://jeec.tecnico.ulisboa.pt/~jeec.daemon/16/index_en.html" target="_blank">JEEC|16</a>
+                    </li>
+                    <li>
+                        <a id="flagPTReplace" href="atividades_workshops.html">
+                            <img id="flagImage" src="img/pt_flag_v2.png">
+                        </a>
+                    </li>
+                    <li>
+                        <!--   <span style="padding-left:5px"></span> -->
+                        <a id="flagUKReplace" href="activity_workshops.html">
+                            <img id="flagImage" src="img/uk_flag_v2.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+   
+
+    <!-- Page Content -->
+<section>
+        <!-- Page Content -->
+        <br>
+        <br>
+   <div class="container">
+
+        <header class="major" style="text-align:center;margin-top:80px; margin-bottom:60px;">
+                <h1 style=" margin-bottom:10px;">WORKSHOPS</h1>
+        </header>
+ 
+       <div class="row text-center" style="margin-bottom:50px;">
+            <div class="col-md-4 col-sm-6 hero-feature">
+                <div class="thumbnail" style="background-color: #f1f1f1;">
+                    <img src="img/workshop/kpmg_316x316.png" alt="">
+                    <div class="caption">
+                        <h3>From BuzzWords to BuzzProjects</h3><br>
+                        <p><a href="#kpmg" class="btn btn-primary btn-lg">More Info</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 hero-feature">
+                <div class="thumbnail" style="background-color: #f1f1f1;">
+                    <img src="img/workshop/Celfinet_316x316.png" alt="">
+                    <div class="caption">
+                        <h3>InovActive Telecom Engineering</h3><br>
+                        <p><a href="#Celfinet" class="btn btn-primary btn-lg">More Info</a></p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4 col-sm-6 hero-feature">
+                <div class="thumbnail" style="background-color: #f1f1f1;">
+                    <img src="img/workshop/Altran_316x316.png" alt="">
+                    <div class="caption">
+                        <h3>Future of TV<br><br></h3><br>
+                        <p><a href="#Altran" class="btn btn-primary btn-lg">More Info</a></p>
+                    </div>
+                </div>
+            </div>       
+        </div>
+         <div class="row text-center">
+            <div class="col-md-4 col-sm-6 hero-feature">
+                <div class="thumbnail" style="background-color: #f1f1f1;">
+                    <img src="img/workshop/Vodafone_316x316.png" alt="">
+                    <div class="caption">
+                        <h3>Radio Network optimization Challenges: from 2G to 5G</h3><br>
+                        <p><a href="#Vodafone" class="btn btn-primary btn-lg">More Info</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 hero-feature">
+                <div class="thumbnail" style="background-color: #f1f1f1;">
+                    <img class "img thumbnail" src="img/workshop/Everis_316x316.png" alt="">
+                    <div class="caption">
+                        <h3>Application to employment<br><br></h3><br>
+                        <p><a href="#Everis" class="btn btn-primary btn-lg">More Info</a></p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4 col-sm-6 hero-feature">
+                <div class="thumbnail" style="background-color: #f1f1f1;">
+                    <img src="img/workshop/Bliss_316x316.png" alt="">
+                    <div class="caption">
+                        <h3>Hololens and Unity - augmented reality</h3><br>
+                        <p><a href="#Bliss" class="btn btn-primary btn-lg">More Info</a></p>
+                    </div>
+                </div>
+            </div>       
+        </div>
+        
+        <div class="row text-center">
+            <div class="col-md-4 col-sm-6 hero-feature">
+                <div class="thumbnail" style="background-color: #f1f1f1;">
+                    <img src="img/workshop/Microsoft_316x316.png" alt="">
+                    <div class="caption">
+                        <h3>Azure Networking – Cloud concepts for a rainy day</h3><br>
+                        <p><a href="#Microsoft" class="btn btn-primary btn-lg">More Info</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 hero-feature">
+                <div class="thumbnail" style="background-color: #f1f1f1;">
+                    <img class "img thumbnail" src="img/workshop/Faber_316x316.png" alt="">
+                    <div class="caption">
+                        <h3>I think I have a great idea, so now what?</h3><br>
+                        <p><a href="#Faber" class="btn btn-primary btn-lg">More Info</a></p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-md-4 col-sm-6 hero-feature">
+                <div class="thumbnail" style="background-color: #f1f1f1;">
+                    <img src="img/workshop/TAP_316x316.png" alt="Tap">
+                    <div class="caption" >
+                        <h3>Aircraft Maintenance Troubleshooting Procedures</h3><br>
+                        <p><a href="#TAP" class="btn btn-primary btn-lg">More Info</a></p>
+                        <div id="kpmg"></div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+   </div>
+   
+   <div class="container" style="margin-bottom:50px; background-color: #f1f1f1;">
+        <div class="row">
+            <div class="col-md-6">
+                <h2  class="page-header" style ="text-align:left;"><b>From BuzzWords to BuzzProjects</b></h2>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4  style ="text-align:left;"><b>Workshop KPMG - 6 March at 15:30</b></h4><br><br>
+            </div>
+            <div class="col-md-6">
+                <div style="margin-bottom:60px;">
+                    <img class="img img-responsive img-center" id="imagelecture" src="img/workshop/KPMG.png" alt="KPMG"></a>
+                </div> 
+            </div>
+        </div>
+        <!--Button-->
+        <div class="row" style="background-color: #f1f1f1; padding-bottom: 40px">
+            <div class="col-md-5 col-sm-5 text-center"></div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enroll" onclick="window.open('https://goo.gl/forms/nctKyAeoUs3DqwCp1')">
+            </div>
+            <div class="col-md-5 col-sm-5 text-center"></div>
+        </div>
+        <div id="Celfinet"></div>
+    </div>
+   
+   <div class="container" style="margin-bottom:50px; background-color: #f1f1f1;">
+        <div class="row">
+            <div class="col-md-6">
+                <div style="margin-top:60px; margin-bottom:60px;">
+                    <img class="img img-responsive img-center" id="imagelecture" style="max-width:90%" src="img/workshop/Celfinet.jpg" alt="Celfinet"></a>
+                </div> 
+            </div>
+            <div class="col-md-6">
+                <h2  class="page-header" style ="text-align:left;"><b>InovActive Telecom Engineering</b></h2>
+                <h4  style ="text-align:left;"><b>Workshop Celfinet - 6 March at 17:00</b></h4><br><br>
+                <p style="text-align:justify; margin-bottom:50px"> With the information boom advent from the Smartphones, Social Networks, Live Streaming and more recently, 
+                IOT, 5G, Big Data and Machine Learning, classical engineering does not cut it. The need of a new kind of Engineers arise, the so called InovActive Engineers, 
+                who actively seek Innovation and adapt to Change.<br> 
+                Join us to find out how you can become a InovActive Enginner. Are you willing to embrace Change? CELFINET is!</p>
+            </div>
+        </div>
+        <!--Button-->
+        <div class="row" style="background-color: #f1f1f1; padding-bottom: 40px">
+            <div class="col-md-5 col-sm-5 text-center"></div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enroll" onclick="window.open('https://goo.gl/forms/nctKyAeoUs3DqwCp1')">
+            </div>
+            <div class="col-md-5 col-sm-5 text-center"></div>
+        </div>
+        <div id="Altran"></div>
+    </div>
+   
+   <div class="container" style="margin-bottom:50px; background-color: #f1f1f1;">
+        <div class="row">
+            <div class="col-md-6">
+                <h2  class="page-header" style ="text-align:left;"><b>Future of TV</b></h2>
+                <h4  style ="text-align:left;"><b>Workshop Altran - 7 March at 15:30</b></h4><br><br>
+                <p style="text-align:justify;"> Living rooms come in all shapes and sizes, but most couches share something in common – 
+                they are placed in front of a TV.<br>While content is now prevalent in multiple media, TV still represents the biggest screen in our homes 
+                and the one we devote most amount of time and focus to.<br>On this workshop, we’ll explore the recent history of TV and what the future promises on:</p>
+                <ul> 
+                    <li style="font-size: 18px;">Technology</li>
+                    <li style="font-size: 18px;">User Experience</li>
+                    <li style="font-size: 18px;">Business Models</li>
+                    <li style="font-size: 18px;">Value Chain &#38; Networks</li>
+                </ul>
+                <p style="text-align:justify; margin-bottom:50px">Also we will openly discuss how a tight collaboration between industry and academia will contribute, through investigators, teachers and students, 
+                to position Portugal at the forefront of TV innovation.<br></p>
+            </div>
+            <div class="col-md-6">
+                <div style="margin-top:60px; margin-bottom:60px;">
+                    <img class="img img-responsive img-center" id="imagelecture" style="margin-top:120px" src="img/workshop/altran.jpg" alt="Altran"></a>
+                </div> 
+            </div>
+        </div>
+        <!--Button-->
+        <div class="row" style="background-color: #f1f1f1; padding-bottom: 40px">
+            <div class="col-md-5 col-sm-5 text-center"></div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enroll" onclick="window.open('https://goo.gl/forms/nctKyAeoUs3DqwCp1')">
+            </div>
+            <div class="col-md-5 col-sm-5 text-center"></div>
+        </div>
+        <div id="Vodafone"></div>
+    </div>
+    
+    <div class="container" style="margin-bottom:50px; background-color: #f1f1f1;">
+        <div class="row">
+            <div class="col-md-6">
+                <div style="margin-top:60px; margin-bottom:60px;">
+                    <img class="img img-responsive img-center" id="imagelecture" style="width:350px; heigth:350px;" src="img/workshop/Vodafone_316x316.png" alt="Vodafone"></a>
+                </div> 
+            </div>
+            <div class="col-md-6">
+                <h2  class="page-header" style ="text-align:left;"><b>Radio Network optimization Challenges: from 2G to 5G</b></h2>
+                <h4  style ="text-align:left;"><b>Workshop Vodafone - 7 March at 17:00</b></h4><br><br>
+            </div>
+        </div>
+        <!--Button-->
+        <div class="row" style="background-color: #f1f1f1; padding-bottom: 40px">
+            <div class="col-md-5 col-sm-5 text-center"></div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enroll" onclick="window.open('https://goo.gl/forms/nctKyAeoUs3DqwCp1')">
+            </div>
+            <div class="col-md-5 col-sm-5 text-center"></div>
+        </div>
+        <div id="Everis"></div>
+    </div>
+    
+    <div class="container" style="margin-bottom:50px; background-color: #f1f1f1;">
+        <div class="row">
+            <div class="col-md-6">
+                <h2  class="page-header" style ="text-align:left;"><b>Application to employment</b></h2>
+                <h4  style ="text-align:left;"><b>Workshop Everis - 8 March at 15:30</b></h4><br><br>
+                <p style="text-align:justify;"> During the workshop, the next recruiting stages from companies will be covered:<br>
+                <ol style="margin-bottom:50px">
+                    <li style="font-size: 18px;">Searching for a job</li>
+                    <li style="font-size: 18px;">Presentation Card</li>
+                    <li style="font-size: 18px;">Curriculum vitae</li>
+                    <li style="font-size: 18px;">First contact with the company</li>
+                    <li style="font-size: 18px;">First visit to the company</li>
+                    <li style="font-size: 18px;">Personal presentation</li>
+                    <li style="font-size: 18px;">Psycho-technical tests</li>
+                    <li style="font-size: 18px;">Interviews</li>
+                    <li style="font-size: 18px;">Hiring proposal</li>
+                </ol>
+            </div>
+            <div class="col-md-6">
+                <div style="margin-top:60px; margin-bottom:60px;">
+                    <img class="img img-responsive img-center" id="imagelecture" src="img/workshop/Everis.png" alt="Everis"></a>
+                </div> 
+            </div>
+        </div>
+        <!--Button-->
+        <div class="row" style="background-color: #f1f1f1; padding-bottom: 40px">
+            <div class="col-md-5 col-sm-5 text-center"></div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enroll" onclick="window.open('https://goo.gl/forms/nctKyAeoUs3DqwCp1')">
+            </div>
+            <div class="col-md-5 col-sm-5 text-center"></div>
+        </div>
+        <div id="Bliss"></div>
+    </div>    
+    
+    <div class="container" style="margin-bottom:50px; background-color: #f1f1f1;">
+        <div class="row">
+            <div class="col-md-6">
+                <div style="margin-top:60px; margin-bottom:60px;">
+                    <img class="img img-responsive img-center" id="imagelecture" style="width:350px; heigth:350px;" src="img/workshop/Bliss_316x316.png" alt="Bliss"></a>
+                </div> 
+            </div>
+            <div class="col-md-6">
+                <h2  class="page-header" style ="text-align:left;"><b>Hololens and Unity - augmented reality</b></h2>
+                <h4  style ="text-align:left;"><b>Workshop Bliss - 8 March at 17:00</b></h4><br><br>
+                <p style="text-align:justify; margin-bottom:50px"> Microsoft Hololens is the first augmented reality device completely autonomous that is 
+                available in the market. The augmented reality combines the 3D holographic content with the world that surrounds us, giving holograms context 
+                and scale in the real world and allowing an interaction with these digital content.<br>
+                This workshop will be an introduction to the development of augmented reality 3D applications for Windows Holographics using C#, Visual 
+                Studio and Unity and in which will be approached some features and concepts like: gaze, gestures, voice input, spatial sound and spatial mapping.</p>
+                <p style="text-align:justify; margin-bottom:50px"> <b>Requirements:</b> Laptop and 
+                <a target="_blank" href="http://jeec17.blissapplications.com/"> software</a>.</p>
+            </div>
+        </div>
+        <!--Button-->
+        <div class="row" style="background-color: #f1f1f1; padding-bottom: 40px">
+            <div class="col-md-5 col-sm-5 text-center"></div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enroll" onclick="window.open('https://goo.gl/forms/nctKyAeoUs3DqwCp1')">
+            </div>
+            <div class="col-md-5 col-sm-5 text-center"></div>
+        </div>
+        <div id="Microsoft"></div>
+    </div>
+   
+    <div class="container" style="margin-bottom:50px; background-color: #f1f1f1;">
+        <div class="row">
+            <div class="col-md-6">
+                <h2  class="page-header" style ="text-align:left;"><b>Azure Networking – Cloud concepts for a rainy day</b></h2>
+                <h4  style ="text-align:left;"><b>Workshop Microsoft - 9 March at 11:00</b></h4><br><br>
+                <p style="text-align:justify; margin-bottom:50px"> Cloud related services have been the trending services for some time now and will be for sure the 
+                future of the businesses.<br>
+                When university time come to an end and you are tossed into the work world this is what you’ll find in the cutting edge enterprises.<br>
+                This session aims to teach you about what the cloud is, how it works and how can we take advantage of it.<br>
+                The session will be split in two stages:  a short intro to Azure world and a hands-on lab where we will learn how to set up a network from scratch on the cloud.<br>
+                This way you’ll acquire some cloud concepts and save them for a rainy day!</p>
+                <p style="text-align:justify; margin-bottom:50px"> <b>Requirements:</b> Laptop and have an
+                <a target="_blank" href="https://azure.microsoft.com/pt-pt/?&wt.srch=1&wt.mc_id=AID529465_SEM_JOOFaS8i"> Azure Trial subscription</a> ready to go.</p>
+            </div>
+            <div class="col-md-6">
+                <div style="margin-top:60px; margin-bottom:60px;">
+                    <img class="img img-responsive img-center" id="imagelecture" style="width:350px; heigth:350px; margin-top:125px;" src="img/workshop/Microsoft_316x316.png" alt="Microsoft"></a>
+                </div> 
+            </div>
+        </div>
+        <!--Button-->
+        <div class="row" style="background-color: #f1f1f1; padding-bottom: 40px">
+            <div class="col-md-5 col-sm-5 text-center"></div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enroll" onclick="window.open('https://goo.gl/forms/nctKyAeoUs3DqwCp1')">
+            </div>
+            <div class="col-md-5 col-sm-5 text-center"></div>
+        </div>
+        <div id="Faber"></div>
+    </div>
+    
+    <div class="container" style="margin-bottom:50px; background-color: #f1f1f1;">
+        <div class="row">
+            <div class="col-md-6">
+                <div style="margin-top:60px; margin-bottom:60px;">
+                    <img class="img img-responsive img-center" id="imagelecture" style="margin-top:125px" src="img/workshop/FaberVentures.png" alt="Faber Ventures"></a>
+                </div> 
+            </div>
+            <div class="col-md-6">
+                <h2  class="page-header" style ="text-align:left;"><b>I think I have a great idea, so now what?</b></h2>
+                <h4  style ="text-align:left;"><b>Workshop Faber Ventures - 9 March at 15:30</b></h4><br><br>
+                <p style="text-align:justify;"> Agenda:<br></p>
+                <ol>
+                    <li style="font-size: 18px;">First, reality check: Am I a genius? Is there any opportunity?</li>
+                    <li style="font-size: 18px;">Different ideas, different paths: I might have something, but how big can it be? Can I build a business out of it?</li>
+                    <li style="font-size: 18px;">The entrepreneurial mindset: What it takes to build a company?</li>
+                    <li style="font-size: 18px;">Make a decision: Should I stay or should I go?</li>
+                </ol>
+                <p style="text-align:justify; margin-bottom:50px">This workshop will give you an overview about the idea validation process and decisions you'll need 
+                make along the way. It aims to be a hands-on and practical session, the participants will have the opportunity to work in groups and test an idea 
+                validation framework, based on pre-defined ideas or in real ideas from participants, so if you have an idea that you would like to test and receive 
+                feedback, you can take the opportunity to work it during the session. This methodology and framework is part of  of the
+                <a target="_blank" href="http://faber-ventures.com/internship">Faber Summer Internhship Program</a>.</p>
+            </div>
+        </div>
+        <!--Button-->
+        <div class="row" style="background-color: #f1f1f1; padding-bottom: 40px">
+            <div class="col-md-5 col-sm-5 text-center"></div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enroll" onclick="window.open('https://goo.gl/forms/nctKyAeoUs3DqwCp1')">
+            </div>
+            <div class="col-md-5 col-sm-5 text-center"></div>
+        </div>
+        <div id="TAP"></div>
+    </div>
+    
+    <div class="container" style="margin-bottom:50px; background-color: #f1f1f1;">
+        <div class="row">
+            <div class="col-md-6">
+                <h2  class="page-header" style ="text-align:left;"><b>Aircraft Maintenance Troubleshooting Procedures</b></h2>
+                <h4  style ="text-align:left;"><b>Workshop TAP - 9 March at 17:00</b></h4><br><br>
+                <p style="text-align:justify; margin-bottom:50px">  In present day, civil aviation is an extremely regulated and certified industry, in which it’s 
+                necessary to obey an extensive and detailed set of rules in order to commercial flights. For this reason, airlines must establish norms of conduct 
+                and procedures to maintain the normality of the operation with the guaranty of the flight’s safety. Bearing this in mind, operators make use of 
+                tools provided by the industry’s manufacturers.<br>
+                Along the years and with growing competition, the optimization of this process has become essential, making the need for fast and efficient solutions 
+                a priority in order to limit the disruptions, especially those with a big operational impact. With this workshop, it’s intended to demonstrate in 
+                which way this optimization is achieved, using tools, troubleshooting procedures and actions in a real failure situation.</p>
+            </div>
+            <div class="col-md-6">
+                <div style="margin-top:60px; margin-bottom:60px;">
+                    <img class="img img-responsive img-center" style="margin-top:150px;" id="imagelecture" src="img/workshop/Tap.jpg" alt="TAP"></a>
+                </div> 
+            </div>
+        </div>
+        <!--Button-->
+        <div class="row" style="background-color: #f1f1f1; padding-bottom: 40px">
+            <div class="col-md-5 col-sm-5 text-center"></div>
+            <div class="col-md-2 col-sm-2 text-center">
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Enroll" onclick="window.open('https://goo.gl/forms/nctKyAeoUs3DqwCp1')">
+            </div>
+            <div class="col-md-5 col-sm-5 text-center"></div>
+        </div>
+    </div>
+   
+   
+   
+   
+   
+</section>
+
+</div>
+ <footer id="footer" style="margin-bottom:0px">
+                    <ul>
+                        <a href="http://deec.ist.utl.pt/"><img id="logos" src="img/deec.png" border="0"></a>
+                        <a href="http://tecnico.ulisboa.pt"><img id="logos" src="img/IST.png" border="0"></a>
+                        <a href="http://neecist.org/" ><img id="logos" src="img/neeclogo.png" border="0"></a>
+                    </ul>
+</footer>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
