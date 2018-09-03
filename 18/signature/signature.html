@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt_PT">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <title>JEEC Signature</title>
+
+        <style>
+            a {
+                margin: 0;
+                padding: 0;
+                border: none;
+                text-decoration: none;
+                color:#b0b0b0;
+            }
+            table, td {
+                margin: 0;
+                padding: 0;
+                font-family: 'Lucida Grande', sans-serif;
+                white-space: nowrap;
+                font-size: 14px;
+            }
+
+            .logo {
+                border: none;
+            }
+
+            .social-logo {
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+                margin: 5px;
+            }
+
+        </style>
+
+        <script>
+            function askInformation() {
+                // Name
+                var name = document.getElementById('name');
+                name.innerHTML = prompt('Name:','');
+
+                // Email
+                name.setAttribute('href', 'mailto:' + prompt('Email:','@tecnico.ulisboa.pt'));
+
+                // Role
+                document.getElementById('role').innerHTML = prompt('Role:','Colaborador');
+
+                // Phone
+                var phone = prompt('Phone number:','');
+                var phoneChunks = phone.match(/\d{3}/g);
+                phone = '+351 ' + phoneChunks[0] + ' ' + phoneChunks[1] + ' '  + phoneChunks[2];
+                var $phone = document.getElementById('phone');
+                $phone.innerHTML = phone;
+                $phone.setAttribute('href', 'tel:+351 ' + phone);
+            }
+        </script>
+    </head>
+    <body onload="askInformation();">
+        <table>
+            <tbody>
+                <tr>
+                    <td valign="top">
+                        <a href="http://jeec.tecnico.ulisboa.pt/">
+                            <img src="http://jeec.tecnico.ulisboa.pt/18/sinature/logo_simple.png" alt="JEEC" height="71" width="200">
+                        </a>
+                        <table style="color:#b0b0b0; border-collapse:collapse;-webkit-text-size-adjust:none;">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong><a id="name" style="color:#009ee0;" href="mailto:$Email">$Name</a></strong>
+                                        <span id="role">$Role</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://tecnico.ulisboa.pt/" style="color:#b0b0b0">Técnico Lisboa</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a id="phone" style="color:#b0b0b0" href="tel:$Phone">$Phone</a>
+                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="https://www.facebook.com/JEECIST">
+                                            <img src="https://github.com/NEECIST/jeec.ist/blob/master/mail_signature/facebook.png" class="social-logo"/></a>
+                                        
+                                        <a href="https://www.instagram.com/jeec.ist/">
+                                            <img src="https://github.com/NEECIST/jeec.ist/blob/master/mail_signature/instagram.png" class="social-logo"/></a>
+                
+                                        <a href="https://jeec.ist/" style="color:#b0b0b0">Website</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
